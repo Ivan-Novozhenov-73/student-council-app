@@ -1,0 +1,27 @@
+using System;
+
+namespace StudentCouncilAPI.DTOs
+{
+    public class NoteDto
+    {
+        public Guid NoteId { get; set; }
+        public Guid UserId { get; set; }
+        public Guid EventId { get; set; }
+        public string Title { get; set; }
+        public string FilePath { get; set; }
+    }
+
+    public class CreateNoteDto
+    {
+        public Guid UserId { get; set; }
+        public Guid EventId { get; set; }
+        public string Title { get; set; }
+        public string FilePath { get; set; }
+    }
+
+    public class UpdateNoteDto
+    {
+        public string? Title { get; set; }
+        public string? FilePath { get; set; }
+    }
+}
