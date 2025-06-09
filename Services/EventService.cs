@@ -39,7 +39,7 @@ namespace StudentCouncilAPI.Services
             return e == null ?  null : MapToDto(e);
         }
 
-        public async Task<EventDto> CreateEventAsync(CreateEventRequest request)
+        public async Task<EventDto> CreateEventAsync(CreateEventDto request)
         {
             var e = new Event
             {
@@ -58,7 +58,7 @@ namespace StudentCouncilAPI.Services
             return MapToDto(e);
         }
 
-        public async Task<EventDto> UpdateEventAsync(Guid id, UpdateEventRequest request)
+        public async Task<EventDto> UpdateEventAsync(Guid id, UpdateEventDto request)
         {
             var e = await _context.Events
                 .Include(ev => ev.EventUsers).ThenInclude(eu => eu.User)

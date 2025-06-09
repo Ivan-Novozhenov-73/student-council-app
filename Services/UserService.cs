@@ -35,7 +35,7 @@ namespace StudentCouncilAPI.Services
             return user == null ? null : MapToDto(user);
         }
 
-        public async Task<UserDto> CreateUserAsync(CreateUserRequest request)
+        public async Task<UserDto> CreateUserAsync(UpdateUserDto request)
         {
             var user = new User
             {
@@ -55,7 +55,7 @@ namespace StudentCouncilAPI.Services
             return MapToDto(user);
         }
 
-        public async Task<UserDto?> UpdateUserAsync(Guid userId, UpdateUserRequest request)
+        public async Task<UserDto?> UpdateUserAsync(Guid userId, UpdateUserDto request)
         {
             var user = await _context.Users.FindAsync(userId);
             if (user == null) return null;

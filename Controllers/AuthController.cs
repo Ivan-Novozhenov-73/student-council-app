@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using StudentCouncilAPI.DTOs;
 using StudentCouncilAPI.Mappers;
 using StudentCouncilAPI.Models;

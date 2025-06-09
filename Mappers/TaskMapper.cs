@@ -6,7 +6,7 @@ namespace StudentCouncilAPI.Mappers
 {
     public static class TaskMapper
     {
-        public static TaskDto ToDto(Task entity)
+        public static TaskDto ToDto(StudentCouncilAPI.Models.Task entity)
         {
             if (entity == null) return null;
             return new TaskDto
@@ -21,7 +21,7 @@ namespace StudentCouncilAPI.Mappers
             };
         }
 
-        public static Task ToEntity(CreateTaskDto dto)
+        public static StudentCouncilAPI.Models.Task ToEntity(CreateTaskDto dto)
         {
             if (dto == null) return null;
             return new Task
@@ -36,7 +36,7 @@ namespace StudentCouncilAPI.Mappers
             };
         }
 
-        public static void UpdateEntity(Task entity, UpdateTaskDto dto)
+        public static void UpdateEntity(StudentCouncilAPI.Models.Task entity, UpdateTaskDto dto)
         {
             if (dto == null || entity == null) return;
             if (dto.PartnerId.HasValue) entity.PartnerId = dto.PartnerId;

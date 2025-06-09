@@ -28,7 +28,7 @@ namespace StudentCouncilAPI.Controllers
         public async Task<ActionResult<IEnumerable<TaskDto>>> GetTasks(
             [FromQuery] Guid? eventId = null,
             [FromQuery] Guid? userId = null,
-            [FromQuery] TaskStatus? status = null)
+            [FromQuery] StudentCouncilAPI.Models.TaskStatus? status = null)
         {
             IEnumerable<Models.Task> tasks;
 
