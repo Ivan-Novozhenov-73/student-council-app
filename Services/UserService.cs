@@ -35,7 +35,7 @@ namespace StudentCouncilAPI.Services
             return user == null ? null : MapToDto(user);
         }
 
-        public async Task<UserDto> CreateUserAsync(UpdateUserDto request)
+        public async Task<UserDto> CreateUserAsync(CreateUserDto request)
         {
             var user = new User
             {

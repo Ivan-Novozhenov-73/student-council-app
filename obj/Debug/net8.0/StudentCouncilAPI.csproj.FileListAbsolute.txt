@@ -109,3 +109,4 @@ D:\Загрузки\student-council-app\StudentCouncilAPI\obj\Debug\net8.0\refin
 D:\Загрузки\student-council-app\StudentCouncilAPI\obj\Debug\net8.0\StudentCouncilAPI.pdb
 D:\Загрузки\student-council-app\StudentCouncilAPI\obj\Debug\net8.0\StudentCouncilAPI.genruntimeconfig.cache
 D:\Загрузки\student-council-app\StudentCouncilAPI\obj\Debug\net8.0\ref\StudentCouncilAPI.dll
+D:\Загрузки\student-council-app\StudentCouncilAPI\obj\Debug\net8.0\StudentCouncilAPI.sourcelink.json
