@@ -4,10 +4,10 @@ namespace StudentCouncilAPI.DTOs
 {
     public class EventDto
     {
-        public Guid EventId { get; set; }
-        public string Title { get; set; }
-        public int Status { get; set; }
-        public string Description { get; set; }
+        public required Guid EventId { get; set; }
+        public required string Title { get; set; }
+        public required int Status { get; set; }
+        public required string Description { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public TimeSpan? EventTime { get; set; }
@@ -17,7 +17,7 @@ namespace StudentCouncilAPI.DTOs
 
     public class CreateEventDto
     {
-        public string Title { get; set; }
+        public required string Title { get; set; }
         public int Status { get; set; }
         public string Description { get; set; }
         public DateTime? StartDate { get; set; }
